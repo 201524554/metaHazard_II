@@ -14,14 +14,6 @@ contract metaH_Vote is ERC20, ERC20Permit, ERC20Votes {
         mint(_owner, 100);
     }
 
-    function viewBlock() public view returns(uint){
-        return block.number;
-    }
-
-    function viewCheck(address addr) public view returns(Checkpoint[] memory){
-        return _checkpoints[addr];
-    }
-
     function _afterTokenTransfer(address from, address to, uint256 amount) internal override(ERC20, ERC20Votes) {
         super._afterTokenTransfer(from, to, amount);
     }
