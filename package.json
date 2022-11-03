@@ -1,3 +1,16 @@
 {
-  "name": "hardhat-project"
+  "name": "ts",
+  "scripts": {
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "size": "npx hardhat size-contracts"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "@openzeppelin/contracts": "^4.7.3",
+    "hardhat": "^2.12.1",
+    "hardhat-contract-sizer": "^2.6.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  }
 }
